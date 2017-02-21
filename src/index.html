@@ -4,11 +4,34 @@
   <meta charset="utf-8">
   <title>Terrania</title>
   <base href="/">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=latin-ext,vietnamese" rel="stylesheet"> 
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <nav>
+  <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Terrania</a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse" style="font-size: 3em">≡</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a>LEARN</a></li>
+        <li><a>PLAY</a></li>
+        <li><a>ABOUT</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a>Learn</a></li>
+        <li><a>Play</a></li>
+        <li><a>About</a></li>
+      </ul>
+    </div>
+  </nav>
   <app-root>Loading...</app-root>
+  <script>
+    $( document ).ready(function(){
+      $(".button-collapse").sideNav();
+    })
+  </script>
 </body>
 </html>
