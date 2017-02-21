@@ -11,23 +11,20 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <nav>
-  <div class="nav-wrapper container">
-      <a href="#" class="brand-logo">Terrania</a>
-      <a href="#" data-activates="nav-mobile" class="button-collapse" style="font-size: 3em">≡</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a>LEARN</a></li>
-        <li><a>PLAY</a></li>
-        <li><a>ABOUT</a></li>
-      </ul>
-      <ul id="nav-mobile" class="side-nav">
-        <li><a>Learn</a></li>
-        <li><a>Play</a></li>
-        <li><a>About</a></li>
-      </ul>
+  
+  <app-root>
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
     </div>
-  </nav>
-  <app-root>Loading...</app-root>
+  </app-root>
   <script>
     $( document ).ready(function(){
       $(".button-collapse").sideNav();
