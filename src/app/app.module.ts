@@ -7,6 +7,8 @@ import { Route, RouterModule }   from '@angular/router';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about.component';
 import { HomeComponent } from './home.component';
+import { LearnComponent } from './learn.component';
+import { PlayComponent } from './play.component';
 
 const routes: Route[] = [
   {
@@ -19,8 +21,20 @@ const routes: Route[] = [
     component: HomeComponent
   },
   {
+    path: 'learn',
+    component: LearnComponent
+  },
+  {
+    path: 'play',
+    component: PlayComponent
+  },
+  {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'home'
   }
 ]
 
@@ -28,8 +42,9 @@ const routes: Route[] = [
   declarations: [
     AppComponent, 
     HomeComponent,
+    LearnComponent,
+    PlayComponent,
     AboutComponent,
-    
   ],
   imports: [
     BrowserModule,

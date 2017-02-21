@@ -1,19 +1,17 @@
 <nav>
   <div class="nav-wrapper container">
-      <a href="#" class="brand-logo">Terrania</a>
-      <a href="#" data-activates="nav-mobile" class="button-collapse" style="font-size: 3em">≡</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a>LEARN</a></li>
-        <li><a>PLAY</a></li>
-        <li><a routerLink="/about">ABOUT</a></li>
-      </ul>
-      <ul id="nav-mobile" class="side-nav">
-        <li><a>Learn</a></li>
-        <li><a>Play</a></li>
-        <li><a routerLink="/about">About</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container">
-    <router-outlet></router-outlet>
+    <a routerLink="home" class="brand-logo">Terrania</a>
+    <a href="#" data-activates="nav-mobile" class="button-collapse" style="font-size: 3em">≡</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a routerLink="learn">LEARN</a></li>
+      <li><a routerLink="play">PLAY</a></li>
+      <li><a routerLink="/about">ABOUT</a></li>
+    </ul>
+    <ul id="nav-mobile" class="side-nav">
+      <li><a routerLink="learn" data-activates="nav-mobile">Learn</a></li>
+      <li><a routerLink="play" data-activates="nav-mobile">Play</a></li>
+      <li><a routerLink="about" data-activates="nav-mobile">About</a></li>
+    </ul>
   </div>
+</nav>
+<router-outlet></router-outlet>

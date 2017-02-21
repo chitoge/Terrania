@@ -13,7 +13,7 @@
 <body>
   
   <app-root>
-    <div class="preloader-wrapper big active">
+    <div class="valign-wrapper preloader-wrapper big active">
       <div class="spinner-layer spinner-blue">
         <div class="circle-clipper left">
           <div class="circle"></div>
@@ -27,7 +27,10 @@
   </app-root>
   <script>
     $( document ).ready(function(){
-      $(".button-collapse").sideNav();
+      $(".button-collapse").sideNav({
+        closeOnClick: true,
+        draggable: true
+      });
     })
   </script>
 </body>
